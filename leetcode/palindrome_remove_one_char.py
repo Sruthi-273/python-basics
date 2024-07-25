@@ -1,4 +1,5 @@
 
+from stylepy import h1,h2,h3,h4,h5,h6
 def valid_palindrome(s):
 
   def is_valid(i, j ):
@@ -22,8 +23,8 @@ def valid_palindrome(s):
   return True
 
 s = 'aba'
-print(f" {s} is {'palindrome' if valid_palindrome(s) else 'not a palindrome'} ")
+h3(f" {s} is {'palindrome' if valid_palindrome(s) else 'not a palindrome'} ")
 s = 'abac'
-print(f" {s} is {'palindrome' if valid_palindrome(s) else 'not a palindrome'} ")
+h4(f" {s} is {'palindrome' if valid_palindrome(s) else 'not a palindrome'} ")
 s = 'abacd'
-print(f" {s} is {'palindrome' if valid_palindrome(s) else 'not a palindrome'} ")
+h3(f" {s} is {'palindrome' if valid_palindrome(s) else 'not a palindrome'} ")

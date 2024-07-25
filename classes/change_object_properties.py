@@ -12,14 +12,14 @@ bus = sc.Bus()
 h1(f"Bus length : {bus.length}")
 bus.length = 10
 bus.get_length = get_length1
-h5(f"Bus length : {bus.length}")
-h6(f"bus length is : {bus.get_length(bus)}")
+print(f"Bus length : {bus.length}")
+print(f"bus length is : {bus.get_length(bus)}")
 bus.additional_param = 9
 
 # we can assign and change the properties from out side but it is a bad design
 
 
-h5(f" bus additional param : {bus.additional_param}")
+print(f" bus additional param : {bus.additional_param}")
 
 apple = sc.Fruit()
 

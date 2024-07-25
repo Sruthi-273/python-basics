@@ -3,7 +3,7 @@ h1('\n >>>> Split String Example');
 
 original = "Hello, World!"
 target = original.split(",")
-print("Using Native Split function: ", target)
+h1("Using Native Split function: ", target)
 
 # Faced `TabError: inconsistent use of tabs and spaces in indentation`
 

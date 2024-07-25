@@ -2,7 +2,7 @@
 from simple_class import Bus, Fruit, WashingMachine
 from stylepy import h1,h2,h3,h4,h5,h6
 bus = Bus()
-h2(f"Bus lenghth is {bus.model}")
+print(f"Bus Model is {bus.model}")
 
 fruit = Fruit()
 h3(f"Fruit name : {fruit.name}, color: {fruit.color} ")

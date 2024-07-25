@@ -1,4 +1,7 @@
 # python module.py  interview/string_substitute.py
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from utilities.testUtils import solution_title, print_and_assert_new, getTestResult
 from utilities.commonUtils import timeComplexity, spaceComplexity
 from stylepy import h1,h4

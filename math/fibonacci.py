@@ -1,12 +1,13 @@
 from tabulate import tabulate
+from stylepy import h1,h2,h3,h4,h5,h6
 def fibonacci_recursive(n: int): 
   if n <= 1:
     return n
   return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
 
-print("Reccursive Fibonacci")
+h2("Reccursive Fibonacci")
 n = 10
-print([fibonacci_recursive(value) for value in range(n)])
+h4([fibonacci_recursive(value) for value in range(n)])
 
 
 def fibonacci_memoized(n, memo={}):
@@ -15,9 +16,9 @@ def fibonacci_memoized(n, memo={}):
   if n not in memo:
     memo[n] = fibonacci_memoized(n - 1, memo) + fibonacci_memoized(n - 2, memo)
   return memo[n]
-print("Reccursive memoized")
+h3("Reccursive memoized")
 n = 10
-print([fibonacci_memoized(value) for value in range(n)])
+h3([fibonacci_memoized(value) for value in range(n)])
 
 def fibonacci_optimised(n):
   if n <= 1:
@@ -30,14 +31,14 @@ def fibonacci_optimised(n):
     prev = temp
   return current 
 
-print("Reccursive optimised")
+h3("Reccursive optimised")
 n = 10
-print([fibonacci_optimised(value) for value in range(n)])
+h4([fibonacci_optimised(value) for value in range(n)])
 
 table = (["Solution", "Time complexity", "Space complexity"], 
          ["Recursive", "O(2^n)", "O(2^n)"], 
          ["Recursive memoized" , "O(n)" , "O(n)"],
          ["Optimised" , "O(n)" , "O(1)"])
 
-print(tabulate(table, headers="firstrow"))
+h3(tabulate(table, headers="firstrow"))
 
